@@ -329,12 +329,13 @@ img, svg { display: block; max-width: 100%; }
 
 .concept-ja {
   font-family: var(--f-serif);
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.8rem, 3vw, 3rem);
   font-weight: 400;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.08em;
   color: var(--c-ink);
   margin-bottom: 3.2rem;
-  line-height: 1.2;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .concept-en {
