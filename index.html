@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Co-knowledge — ブランド運営とWebデザインのスタジオ。Creating knowledge into form.">
+  <meta property="og:title" content="Co-knowledge">
+  <meta property="og:description" content="Creating knowledge into form.">
+  <meta property="og:type" content="website">
+  <title>Co-knowledge</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ローダー -->
+  <div id="loader" aria-hidden="true">
+    <span class="loader-mark">Co-knowledge</span>
+  </div>
+
+  <!-- カスタムカーソル -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- ナビゲーション -->
+  <nav id="nav" aria-label="グローバルナビゲーション">
+    <a href="#top" class="nav-brand">Co-knowledge</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#adgno">ADGNO</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section id="hero" aria-label="ヒーロー">
+      <div class="hero-inner">
+        <h1 class="hero-heading">
+          <span class="line-wrap"><span class="line-text">Creating</span></span>
+          <span class="line-wrap"><span class="line-text is-italic">knowledge</span></span>
+          <span class="line-wrap"><span class="line-text">into form.</span></span>
+        </h1>
+        <div class="hero-caption">
+          <div class="hero-rule"></div>
+          <p class="hero-sub">Ideas become structure.</p>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="scroll-word">Scroll</span>
+        <div class="scroll-bar"></div>
+      </div>
+    </section>
+
+    <!-- コンセプト -->
+    <section id="concept" aria-label="コンセプト">
+      <div class="concept-inner reveal">
+        <p class="concept-ja">知識を、形に。</p>
+        <p class="concept-en">
+          美しいブランドは、意図から生まれる。<br>
+          Co-knowledge は、思想を形にするスタジオです。
+        </p>
+      </div>
+    </section>
+
+    <!-- サービス -->
+    <section id="services" aria-label="サービス">
+      <div class="services-inner">
+
+        <div class="service reveal">
+          <span class="service-num" aria-hidden="true">01</span>
+          <div class="service-body">
+            <h2 class="service-name">Brand</h2>
+            <p class="service-text">
+              ブランドの思想から設計まで。<br>
+              ADGNO 運営をはじめとする、<br>
+              ブランドの構築・運営・ビジュアル制作。
+            </p>
+          </div>
+        </div>
+
+        <div class="service-rule" aria-hidden="true"></div>
+
+        <div class="service reveal" data-delay="120">
+          <span class="service-num" aria-hidden="true">02</span>
+          <div class="service-body">
+            <h2 class="service-name">Web</h2>
+            <p class="service-text">
+              体験設計から実装まで一貫して。<br>
+              ハイエンドな Web サイト制作と<br>
+              ブランドデジタル基盤の構築。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADGNO -->
+    <section id="adgno" aria-label="ADGNOブランド">
+      <div class="adgno-watermark" aria-hidden="true">ADGNO</div>
+      <div class="adgno-inner">
+        <div class="adgno-body reveal">
+          <p class="eyebrow">Our Brand</p>
+          <h2 class="adgno-title">ADGNO</h2>
+          <p class="adgno-subtitle">Japan-made jewelry</p>
+          <p class="adgno-text">
+            日本の職人技術と厳選された素材から生まれる、<br>
+            ジュエリーブランド。
+          </p>
+          <a
+            href="https://adgno.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="adgno-link"
+          >
+            <span>Visit ADGNO</span>
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+              <path d="M1.5 11.5L11.5 1.5M11.5 1.5H3.5M11.5 1.5V9.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 会社概要 -->
+    <section id="about" aria-label="会社概要">
+      <div class="about-inner">
+        <p class="eyebrow reveal">Company</p>
+        <dl class="about-list reveal" data-delay="180">
+          <div class="about-item">
+            <dt>会社名</dt>
+            <dd>合同会社 Co-knowledge</dd>
+          </div>
+          <div class="about-item">
+            <dt>事業内容</dt>
+            <dd>ブランド運営 / Web サイト制作</dd>
+          </div>
+          <div class="about-item">
+            <dt>運営ブランド</dt>
+            <dd>ADGNO（Japan-made jewelry brand）</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- コンタクト -->
+    <section id="contact" aria-label="お問い合わせ">
+      <div class="contact-inner">
+        <div class="contact-body reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="contact-heading">
+            Let's create<br>
+            <em>together.</em>
+          </h2>
+          <a href="mailto:hello@co-knowledge.jp" class="contact-mail">
+            hello@co-knowledge.jp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Co-knowledge</span>
+      <small class="footer-copy">© 2025 合同会社 Co-knowledge</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
