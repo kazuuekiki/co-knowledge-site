@@ -113,6 +113,33 @@
 }());
 
 
+/* ---- Word Field — スクロール視差 ---- */
+(function initWordField() {
+  const words = document.querySelectorAll('.wf');
+  if (!words.length) return;
+
+  let ticking = false;
+
+  function update() {
+    const scrollY = window.scrollY;
+    words.forEach(word => {
+      const speed  = parseFloat(word.dataset.speed || 0.06);
+      const offset = -(scrollY * speed);
+      // CSS individual `translate` property composes with the 3D animation transform
+      word.style.translate = `0 ${offset.toFixed(1)}px`;
+    });
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+}());
+
+
 /* ---- ADGNO Watermark Parallax ---- */
 (function initParallax() {
   const watermark = document.querySelector('.adgno-watermark');
